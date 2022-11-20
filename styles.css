@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  font-size: 18px;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100%;
+  background-image: radial-gradient(
+      circle at 46% 40%,
+      rgba(228, 228, 228, 0.06) 0%,
+      rgba(228, 228, 228, 0.06) 13%,
+      transparent 13%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 11% 41%,
+      rgba(198, 198, 198, 0.06) 0%,
+      rgba(198, 198, 198, 0.06) 19%,
+      transparent 19%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 52% 23%,
+      rgba(14, 14, 14, 0.06) 0%,
+      rgba(14, 14, 14, 0.06) 69%,
+      transparent 69%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 13% 85%,
+      rgba(148, 148, 148, 0.06) 0%,
+      rgba(148, 148, 148, 0.06) 44%,
+      transparent 44%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 57% 74%,
+      rgba(232, 232, 232, 0.06) 0%,
+      rgba(232, 232, 232, 0.06) 21%,
+      transparent 21%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 59% 54%,
+      rgba(39, 39, 39, 0.06) 0%,
+      rgba(39, 39, 39, 0.06) 49%,
+      transparent 49%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 98% 38%,
+      rgba(157, 157, 157, 0.06) 0%,
+      rgba(157, 157, 157, 0.06) 24%,
+      transparent 24%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 8% 6%,
+      rgba(60, 60, 60, 0.06) 0%,
+      rgba(60, 60, 60, 0.06) 12%,
+      transparent 12%,
+      transparent 100%
+    ),
+    linear-gradient(90deg, rgb(148, 220, 10), rgb(18, 123, 10));
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+article {
+  border: 1px solid #000;
+  border-radius: 15px;
+  padding: 85px;
+  position: relative;
+  margin: 0 0 15px 0;
+  overflow: hidden;
+  background-color: #fff;
+  z-index: 1;
+  width: 550px;
+  height: 10vh;
+}
+
+button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin: 25px;
+}
+
+h2 {
+  margin: 0 0 50px 0;
+}
+
+.faq .active::after {
+  content: "\f075";
+  font-family: "Font Awesome 5 Free";
+  color: aquamarine;
+  font-size: 9rem;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.faq-toggle-active::before {
+  content: "\f075";
+  font-family: "Font Awesome 5 Free";
+  color: aquamarine;
+  font-size: 9rem;
+  position: absolute;
+  top: 45px;
+  left: -405px;
+  transform: scaleX(-1);
+  opacity: 0.8;
+  z-index: -1;
+}
+
+button i.fa-xmark,
+p {
+  display: none;
+}
+
+button,
+button i.fa-chevron-down,
+button i.fa-xmark {
+  border: none;
+  outline: none;
+  padding: 10px;
+  background-color: transparent;
+}
+
+button i.fa-xmark {
+  z-index: 3;
+  border: none;
+  outline: none;
+  background-color: rgb(212, 212, 212);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.active {
+  display: block;
+}
+
+article::before .active {
+  transform: translate(500px);
+}
