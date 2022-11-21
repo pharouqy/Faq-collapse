@@ -14,7 +14,7 @@ for (let i = 0; i < btns.length; i++) {
       btns[i].classList.remove("faq-toggle");
       btns[i].classList.add("faq-toggle-active");
       paraph[i].classList.add("active");
-      collapsed[i].style.height = "40vh";
+      collapsed[i].style.height = "250px";
       collapsed[i].style.backgroundColor = "rgba(255,255,255,0.5)";
     } else {
       x[i].style.display = "none";
@@ -22,7 +22,7 @@ for (let i = 0; i < btns.length; i++) {
       btns[i].classList.add("faq-toggle");
       btns[i].classList.remove("faq-toggle-active");
       paraph[i].classList.remove("active");
-      collapsed[i].style.height = "20vh";
+      collapsed[i].style.height = "175px";
       collapsed[i].style.backgroundColor = "#fff";
     }
   });
